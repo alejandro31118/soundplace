@@ -1,8 +1,8 @@
 export const languages = [
     {
-        code: 'en',
-        name: 'English',
-        country_code: 'gb',
+      code: 'en',
+      name: 'English',
+      country_code: 'gb',
     },
     {
       code: 'es',
