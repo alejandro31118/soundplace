@@ -1,5 +1,8 @@
 {
     "PLAYLISTS": "Playlists",
     "LANG": "Language",
-    "TEST": "Text in english"
+    "TEST": "Text in english",
+    "HOME": "Home",
+    "TRENDING": "Trending",
+    "LIBRARY": "Library"
 }

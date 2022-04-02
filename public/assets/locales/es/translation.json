@@ -1,5 +1,8 @@
 {
     "PLAYLISTS": "Listas de reproducción",
     "LANG": "Idioma",
-    "TEST": "Texto en español"
+    "TEST": "Texto en español",
+    "HOME": "Inicio",
+    "TRENDING": "Destacados",
+    "LIBRARY": "Biblioteca"
 }

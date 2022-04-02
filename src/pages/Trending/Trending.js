@@ -1,14 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Home = () => {
+const Trending = () => {
     const { t } = useTranslation()
 
     return (
       <div className="">
-        <h2>{t('HOME')}</h2>
+        <h2>{t('TRENDING')}</h2>
       </div>
     );
   };
   
-  export default Home;
+  export default Trending;
