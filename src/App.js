@@ -1,10 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Home from './pages/Home/Home';
-import Playlists from './pages/Playlists/Playlists';
-import LangSelector from './components/LangSelector/LangSelector';
-import ThemeSelector from './components/ThemeSelector/ThemeSelector';
+import Library from './pages/Library/Library';
+import Trending from './pages/Trending/Trending';
+import Header from './components/Header/Header';
+// import ThemeSelector from './components/ThemeSelector/ThemeSelector';
 import './App.css';
+
 
 
 function App() {
@@ -12,14 +14,13 @@ function App() {
 
   return (
     <div className="App">
-      <LangSelector />
+      <Header />
       {t('TEST')}
-      
-      <ThemeSelector />
 
       <Routes>
         <Route path='/' element={ <Home /> } />
-        <Route path='/playlists' element={ <Playlists /> } />
+        <Route path='/library' element={ <Library /> } />
+        <Route path='/trending' element={ <Trending /> } />
       </Routes>
     </div>
   );

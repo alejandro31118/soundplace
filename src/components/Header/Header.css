@@ -1,0 +1,30 @@
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    position: relative;
+    grid-template-areas: '1 middle right';
+    min-height: 4rem;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.menu {
+    position: relative;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: middle;
+    width: 100%;
+}
+.settings {
+    background-color: inherit;
+    grid-area: right;
+    display: inline-flex;
+    margin-left: auto;
+}
