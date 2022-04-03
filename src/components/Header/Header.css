@@ -22,6 +22,14 @@
     grid-area: middle;
     width: 100%;
 }
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.link:hover {
+    text-decoration: none;
+    color: inherit;
+}
 .settings {
     background-color: inherit;
     grid-area: right;

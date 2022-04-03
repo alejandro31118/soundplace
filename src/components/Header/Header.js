@@ -2,11 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LangSelector from '../LangSelector/LangSelector';
+import Icon from '../Icon/Icon';
 import Logo from './logo.png';
 import './Header.css';
-
-//import 'bootstrap/dist/css/bootstrap.min.css';
-//import 'bootstrap/dist/js/bootstrap.js';
 
 const Header = () => {
     const { t } = useTranslation()
@@ -14,11 +12,13 @@ const Header = () => {
     return (
       <nav className="nav">
         <img className='logo' src={Logo} />
+        {//<Icon name="music" color="#3B4252" />
+        }
         
         <div className='menu'>
-          <Link to='/'>{t('HOME')}</Link>
-          <Link to='/trending'>{t('TRENDING')}</Link>
-          <Link to='/library'>{t('LIBRARY')}</Link>
+          <Link to='/' className='link'>{t('HOME')}<Icon name="home" color="#3B4252" /></Link>
+          <Link to='/trending' className='link'>{t('TRENDING')}<Icon name="trending" color="#3B4252" /></Link>
+          <Link to='/library' className='link'>{t('LIBRARY')}<Icon name="folder" color="#3B4252" /></Link>
         </div>
 
         <div className='settings'>
