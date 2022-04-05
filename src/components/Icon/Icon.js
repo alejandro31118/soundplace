@@ -3,7 +3,7 @@ import parse from 'html-react-parser';
 import { icons } from './icons';
 import './Icon.css';
 
-const Icon = ({color, name}) => {
+const Icon = ({color, name, size}) => {
 
     return (
         <svg
@@ -12,11 +12,11 @@ const Icon = ({color, name}) => {
         fill="none"
         role="img"
         stroke={ color }
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        width= "24px" 
-        height= "24px"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width= { size } 
+        height= { size }
         viewBox="0 0 24 24"> { parse(icons[name]) } </svg>
     );
   };
