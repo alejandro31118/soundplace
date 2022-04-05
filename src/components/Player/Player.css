@@ -1,8 +1,10 @@
-nav {
+.player {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1rem;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     grid-template-areas: '1 middle right';
     min-height: 4rem;
     align-items: center;
@@ -10,30 +12,14 @@ nav {
     justify-content: space-between;
     background-color: aquamarine;
 }
-.logo {
-    height: 2.5rem;
-    width: 2.5rem;
-}
-.middle-nav {
+.control {
     position: relative;
     margin: 0 auto;
-    padding-top: 1rem;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     grid-area: middle;
     width: 100%;
-}
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-.icon-nav {
-    float: left;
-}
-.link:hover {
-    text-decoration: none;
-    color: inherit;
 }
 .settings {
     background-color: inherit;
