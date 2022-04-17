@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LangSelector from '../LangSelector/LangSelector';
 import Icon from '../Icon/Icon';
-import Logo from './logo.png';
 import './Header.css';
 
 const Header = () => {

@@ -27,9 +27,7 @@ nav {
 .link {
     text-decoration: none;
     color: inherit;
-}
-.icon-nav {
-    float: left;
+    text-align: center;
 }
 .link:hover {
     text-decoration: none;
