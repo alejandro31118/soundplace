@@ -7,7 +7,10 @@ import Library from '../Library/Library';
 import Trending from '../Trending/Trending';
 import Header from '../../components/Header/Header';
 import Player from '../../components/Player/Player';
-import LoginButton from '../../components/LoginButton/LoginButton';
+
+/*const spotifyApi = new SpotifyWebApi({
+    clientId: process.env.CLIENT_ID,
+})*/
 
 const Main = ({ code }) => {
     const { t } = useTranslation()
@@ -16,10 +19,14 @@ const Main = ({ code }) => {
     const [searchResults, setSearchResults] = useState([])
     const [playingTrack, setPlayingTrack] = useState()
 
+    /*useEffect(() => {
+        if (!accessToken) return spotifyApi.setAccessToken(accessToken)
+    }, [accessToken])*/
+
     return (
       <div className="">
         <Header />
-      
+        {code}
         <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/library' element={ <Library /> } />
