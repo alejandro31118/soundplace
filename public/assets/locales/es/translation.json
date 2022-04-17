@@ -4,5 +4,7 @@
     "TEST": "Texto en español",
     "HOME": "Inicio",
     "TRENDING": "Destacados",
-    "LIBRARY": "Biblioteca"
+    "LIBRARY": "Biblioteca",
+
+    "SIGN_IN": "Iniciar sesion"
 }

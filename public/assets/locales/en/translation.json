@@ -4,5 +4,7 @@
     "TEST": "Text in english",
     "HOME": "Home",
     "TRENDING": "Trending",
-    "LIBRARY": "Library"
+    "LIBRARY": "Library",
+
+    "SIGN_IN": "Sign in"
 }
