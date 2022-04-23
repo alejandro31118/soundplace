@@ -10,5 +10,6 @@ export const icons = {
 	prev: '<polygon points="19 20 9 12 19 4 19 20" /></polygon> <line x1="5" y1="19" x2="5" y2="5" />',
 	next: '<polygon points="5 4 15 12 5 20 5 4" /></polygon> <line x1="19" y1="5" x2="19" y2="19" />',
 	dots: '<circle cx="12" cy="12" r="1" /></circle> <circle cx="12" cy="5" r="1" /></circle> <circle cx="12" cy="19" r="1" />',
-	user: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /></path><circle cx="12" cy="7" r="4" />'
+	user: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /></path><circle cx="12" cy="7" r="4" />',
+	search: '<circle cx="11" cy="11" r="8" /></circle><line x1="21" y1="21" x2="16.65" y2="16.65" />'
 }

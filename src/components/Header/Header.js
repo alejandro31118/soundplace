@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LangSelector from '../LangSelector/LangSelector';
 import Icon from '../Icon/Icon';
+import Logout from '../Logout/Logout';
 import './Header.css';
 
 const Header = () => {
@@ -17,9 +18,9 @@ const Header = () => {
             <Icon className='icon-nav' name="home" color="#3B4252" size="1.5rem" />
             <p>{t('HOME')}</p>
           </Link>
-          <Link to='/trending' className='link'>
-            <Icon name="trending" color="#3B4252" size="1.5rem" />
-            <p>{t('TRENDING')}</p>
+          <Link to='/search' className='link'>
+            <Icon name="search" color="#3B4252" size="1.5rem" />
+            <p>{t('SEARCH')}</p>
           </Link>
           <Link to='/library' className='link'>
             <Icon name="folder" color="#3B4252" size="1.5rem" />
@@ -29,6 +30,7 @@ const Header = () => {
 
         <div className='settings'>
             <LangSelector />
+            <Logout />
         </div>
       </nav>
     );

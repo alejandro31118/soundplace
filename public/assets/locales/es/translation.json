@@ -1,10 +1,15 @@
 {
-    "PLAYLISTS": "Listas de reproducción",
+    "SIGN_IN": "Iniciar sesión con Spotify",
     "LANG": "Idioma",
+
+    "PLAYLISTS": "Listas de reproducción",
+
     "TEST": "Texto en español",
     "HOME": "Inicio",
-    "TRENDING": "Destacados",
-    "LIBRARY": "Biblioteca",
 
-    "SIGN_IN": "Iniciar sesión con Spotify"
+    "SEARCH": "Explorar",
+    "SEARCH_PLACEHOLDER": "Artistas, canciones, albums, etc",
+    "SONGS": "Canciones",
+
+    "LIBRARY": "Biblioteca"
 }

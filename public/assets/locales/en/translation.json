@@ -1,10 +1,16 @@
 {
-    "PLAYLISTS": "Playlists",
+    "SIGN_IN": "Sign in with Spotify",
     "LANG": "Language",
+
+    "PLAYLISTS": "Playlists",
+
     "TEST": "Text in english",
     "HOME": "Home",
-    "TRENDING": "Trending",
-    "LIBRARY": "Library",
 
-    "SIGN_IN": "Sign in with Spotify"
+    "SEARCH": "Search",
+    "SEARCH_PLACEHOLDER": "Artists, songs, albums, etc",
+    "SONGS": "Songs",
+
+    "LIBRARY": "Library"
+
 }
