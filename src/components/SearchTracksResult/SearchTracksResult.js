@@ -16,23 +16,24 @@ const SearchTracksResult = ({ query }) => {
             'Content-Type': 'application/json'
           }
         })
-        console.log(result.data.tracks.items)
         setItems(result.data.tracks.items)
       }
       fetchItems()
     }, [query])
 
     return (
-        <div>
+        <div className='row'>
             {items.map(track => (
-                <div className='d-flex m-2 align-items-center' style={{ cursor: "pointer" }}>
-                    <img src={track.album.images[0].url} style={{ height: "64px", width: "64px" }} />
-                    <div className="m-3">
-                        <div className='text-light'>{ track.name }</div>
-                        <div className='text-light'>
-                        {track.artists.map(artist => (
-                            artist.name + ', '
-                        ))}
+                <div className='col-6 border'>
+                    <div className='d-inline-flex m-2 align-items-center' style={{ cursor: "pointer" }} key={ track.id } >
+                        {track.album.images.length ? <img src={ track.album.images[0].url } style={{ height: "64px", width: "64px" }} /> : <div>No Image</div>}
+                        <div className="m-3">
+                            <div className='text-light'>{ track.name }</div>
+                            <div className='text-light'>
+                            {track.artists.map(artist => (
+                                artist.name + ', '
+                            ))}
+                            </div>
                         </div>
                     </div>
                 </div>
