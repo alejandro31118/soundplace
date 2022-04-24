@@ -16,6 +16,7 @@
     "LIBRARY": "Library",
 
     "USER_PROFILE": "Profile",
-    "RECENTLY_PLAYED_SONGS": "Recently played songs"
+    "RECENTLY_PLAYED_SONGS": "Recently played songs",
+    "DATE": "Date: "
 
 }

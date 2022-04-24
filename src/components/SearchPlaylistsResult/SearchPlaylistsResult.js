@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
+import Icon from '../Icon/Icon';
 
 const SearchPlaylistsResult = ({ query }) => {
     const { t } = useTranslation()
@@ -27,7 +28,7 @@ const SearchPlaylistsResult = ({ query }) => {
             {items.map(playlist => (
                 <div className='col-6 border'>
                     <div className='d-inline-flex m-2 align-items-center' style={{ cursor: "pointer" }} key={ playlist.id } >
-                    {playlist.images.length ? <img src={ playlist.images[0].url } style={{ height: "64px", width: "64px" }} /> : <div>No Image</div>}
+                    {playlist.images.length ? <img src={ playlist.images[0].url } style={{ height: "64px", width: "64px" }} /> : <Icon name="album" color="#3B4252" size="64px" />}
                         <div className="m-3">
                             <div className='text-light'><strong>{ playlist.name }</strong></div>
                             <div className='text-light'>{ playlist.owner.display_name }</div>

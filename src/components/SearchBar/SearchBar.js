@@ -12,7 +12,7 @@ const SearchBar = ({ getQuery }) => {
     }
 
     return (
-        <form className='container mt-2 bg-dark'>
+        <form className='mt-2 bg-dark'>
             <input className='form-control mb-4' 
                 type='text' 
                 placeholder={ t('SEARCH_PLACEHOLDER') } 
