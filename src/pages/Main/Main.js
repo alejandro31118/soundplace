@@ -6,6 +6,7 @@ import Library from '../Library/Library';
 import Search from '../Search/Search';
 import Header from '../../components/Header/Header';
 import Player from '../../components/Player/Player';
+import UserProfile from '../UserProfile/UserProfile';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Main = () => {
@@ -19,6 +20,7 @@ const Main = () => {
             <Route path='/' element={ <Home /> } />
             <Route path='/library' element={ <Library /> } />
             <Route path='/search' element={ <Search /> } />
+            <Route path='/me' element={ <UserProfile /> } />
         </Routes>
 
         <Player />
