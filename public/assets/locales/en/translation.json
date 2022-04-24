@@ -1,5 +1,6 @@
 {
     "SIGN_IN": "Sign in with Spotify",
+    "LOGOUT": "Logout",
     "LANG": "Language",
 
     "PLAYLISTS": "Playlists",
@@ -12,6 +13,8 @@
     "SONGS": "Songs",
     "ARTISTS": "Artists",
 
-    "LIBRARY": "Library"
+    "LIBRARY": "Library",
+
+    "USER_PROFILE": "Profile"
 
 }

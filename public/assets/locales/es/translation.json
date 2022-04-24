@@ -1,5 +1,6 @@
 {
     "SIGN_IN": "Iniciar sesión con Spotify",
+    "LOGOUT": "Cerrar sesión",
     "LANG": "Idioma",
 
     "PLAYLISTS": "Listas de reproducción",
@@ -12,5 +13,7 @@
     "SONGS": "Canciones",
     "ARTISTS": "Artistas",
 
-    "LIBRARY": "Biblioteca"
+    "LIBRARY": "Biblioteca",
+
+    "USER_PROFILE": "Perfil"
 }

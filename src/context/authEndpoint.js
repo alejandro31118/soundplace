@@ -6,6 +6,8 @@ const redirectUri = process.env.REACT_APP_REDIRECT_URI;
 const scopes = [
   "user-library-read", 
   "playlist-read-private",
+  "user-read-email",
+  "user-follow-read",
   "user-read-currently-playing",
   "user-read-recently-played",
   "user-read-playback-state",
