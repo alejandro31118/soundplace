@@ -18,10 +18,10 @@ const LangSelector = () => {
         <button className='btn btn-link dropdown-toggle' type='button' data-bs-toggle='dropdown'>
           <span className={`flag-icon flag-icon-${currentLanguageCode.country_code}`} />
         </button>
-        <ul className='dropdown-menu'>
+        <ul className='dropdown-menu bg-dark'>
           {languages.map(language => (
             <li key={language.country_code}>
-              <a className='dropdown-item' onClick={() => { i18next.changeLanguage(language.code) }}>
+              <a className='dropdown-item text-light' onClick={() => { i18next.changeLanguage(language.code) }}>
                 <span className={`flag-icon flag-icon-${language.country_code} mx-2`} style={{ opacity: currentLanguage === language.code ? 0.5 : 1 }} />
                 {language.name}
               </a>

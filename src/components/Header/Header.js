@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LangSelector from '../LangSelector/LangSelector';
 import Icon from '../Icon/Icon';
+import HeaderUserOptions from '../HeaderUserOptions/HeaderUserOptions';
 import Logout from '../Logout/Logout';
 import './Header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 const Header = () => {
     const { t } = useTranslation()
 
     return (
-      <nav>
+      <nav className='bg-dark border-bottom'>
         <Icon name="logo" color="#3B4252" size="4.5rem" />
         
         <div className='middle-nav'>
@@ -30,7 +33,7 @@ const Header = () => {
 
         <div className='settings'>
             <LangSelector />
-            <Logout />
+            <HeaderUserOptions />
         </div>
       </nav>
     );
