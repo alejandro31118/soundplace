@@ -1,19 +1,40 @@
-.login {
-    display: grid;
-    background-color: black;
+.bg-image {
     height: 100vh;
-    place-items: center;
+    width: 39vw;
 }
-.login > img {
-    height: 200px;
+.login {
+    position: absolute;
+    right: 0;
+    background-color: #3B4252;
+    height: 100vh;
+    width: 61vw;
+    box-shadow: -10px -1px 9px 3px rgba(0,0,0,0.22);
 }
-.login > a {
+.soundplace-div {
+    margin-top: 9rem;
+}
+.spotify-div {
+    margin-top: 13rem;
+}
+.spotify-logo {
+    height: 2rem;
+}
+.title {
+    font-weight: 800;
+    font-size: 2rem;
+}
+.login-button {
     color: white;
     text-decoration: none;
     padding: 20px;
     border-radius: 99px;
     font-weight: 800;
-    background-color: #1db954;
+    background-color: #4caf50;
+}
+.login-button:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #459448;
 }
 .l-selector {
     float: right;

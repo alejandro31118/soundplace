@@ -1,5 +1,6 @@
 {
-    "SIGN_IN": "Sign in with Spotify",
+    "SIGN_IN": "Sign in",
+    "COLLABORATION": "In collaboration with ",
     "LOGOUT": "Logout",
     "LANG": "Language",
 
