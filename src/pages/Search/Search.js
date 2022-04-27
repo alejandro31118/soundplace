@@ -14,13 +14,13 @@ const Search = ({}) => {
       <div className='container search bg-dark mt-3'>
         <SearchBar getQuery={(q) => setQuery(q)} />
         <div className='flex-grow-1 my-2' style={{ overflowY: "auto" }}>
-          <h4 className='text-light'>{ t('SONGS') }</h4>
+          {query ? <h4 className='text-light'>{ t('SONGS') }</h4> : <h3 className='text-center'>{ t('NO_DATA') }</h3>}
           <SearchTracksResult query={ query }/>
           
-          <h4 className='text-light mt-5'>{ t('ARTISTS') }</h4>
+          {query ? <h4 className='text-light mt-5'>{ t('ARTISTS') }</h4> : <div />}
           <SearchArtistsResult query={ query }/>
 
-          <h4 className='text-light mt-5'>{ t('PLAYLISTS') }</h4>
+          {query ? <h4 className='text-light mt-5'>{ t('PLAYLISTS') }</h4> : <div />}
           <SearchPlaylistsResult query={ query }/>
         </div>
       </div>
