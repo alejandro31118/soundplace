@@ -1,43 +1,30 @@
+body{
+    background-color: #3B4252;
+}
 .bg-image {
     height: 100vh;
     width: 39vw;
 }
-.login {
-    position: absolute;
-    right: 0;
-    background-color: #3B4252;
-    height: 100vh;
-    width: 61vw;
-    box-shadow: -10px -1px 9px 3px rgba(0,0,0,0.22);
-}
-.soundplace-div {
-    margin-top: 9rem;
-}
-.spotify-div {
-    margin-top: 13rem;
-}
-.spotify-logo {
-    height: 2rem;
-}
-.title {
-    font-weight: 800;
-    font-size: 2rem;
-}
-.login-button {
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 99px;
-    font-weight: 800;
-    background-color: #4caf50;
-}
-.login-button:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #459448;
-}
 .l-selector {
+    display: block;
     float: right;
     margin-top: 2rem;
     margin-right: 2rem;
+}
+.btn-color {
+    background-color: #E5E9F0;
+    text-decoration: none;
+}
+.btn-color:hover {
+    background-color: #D8DEE9;
+    text-decoration: none;
+}
+.link {
+    text-decoration: none;
+    color: #3B4252;
+}
+.main-div {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 6rem;
 }

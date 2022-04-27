@@ -1,6 +1,7 @@
 {
     "SIGN_IN": "Iniciar sesión",
-    "COLLABORATION": "En colaboración con ",
+    "LOGIN_MSG_1": "¿Buscas música?",
+    "LOGIN_MSG_2": "Escucha las mejores novedades.",
     "LOGOUT": "Cerrar sesión",
     "LANG": "Idioma",
 

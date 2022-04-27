@@ -1,6 +1,7 @@
 {
     "SIGN_IN": "Sign in",
-    "COLLABORATION": "In collaboration with ",
+    "LOGIN_MSG_1": "Looking for music?",
+    "LOGIN_MSG_2": "Start listening to the best new releases.",
     "LOGOUT": "Logout",
     "LANG": "Language",
 
