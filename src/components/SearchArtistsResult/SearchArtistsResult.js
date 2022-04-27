@@ -32,18 +32,6 @@ const SearchArtistsResult = ({ query }) => {
           </div>
         ))}
       </div>
-        // <div className='row'>
-        //     {items.map(artist => (
-        //         <div className='col-6 border'>
-        //             <div className='d-inline-flex m-2 align-items-center' style={{ cursor: "pointer" }} key={ artist.id } >
-        //                 {artist.images.length ? <img src={artist.images[0].url} style={{ height: "64px", width: "64px" }} alt=""/> : <Icon name="user" color="#3B4252" size="64px" />}
-        //                 <div className="m-3">
-        //                     <div className='text-light'>{ artist.name }</div>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     ))}
-        // </div>
     );
 };
 
