@@ -1,0 +1,13 @@
+.dropdown-toggle:focus {
+    border-color: #E5E9F0;
+    box-shadow: 0 0 0 0.2rem #e5e9f0c0;
+}
+.dropdown-menu {
+    background-color: #2E3440;
+}
+.dropdown-item {
+    color: #fff;
+}
+.dropdown-item:hover {
+    color: #2E3440;
+}

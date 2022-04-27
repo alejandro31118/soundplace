@@ -12,7 +12,7 @@
     align-items: center;
 }
 .artist-result:hover {
-    font-weight: 800;
+    text-decoration: underline;
 }
 .artist-result > img {
     height: 8rem;
