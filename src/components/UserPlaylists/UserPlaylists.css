@@ -1,6 +1,4 @@
 body {
-    background-color: #1f1f1f;
-    color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 .c-card {
@@ -12,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    background-color: #282828;
+    background-color: #2E3440;
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
@@ -38,4 +36,12 @@ body {
   /* Card elements */
 .c-card__name {
     font-weight: bold;
+}
+.none-link {
+    text-decoration: none;
+    color: inherit;
+}
+.none-link:hover {
+    text-decoration: none;
+    color: inherit;
 }
