@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import './UserPlaylists.css';
 
-const UserPlaylists = ({ query }) => {
+const UserPlaylists = () => {
     const { t } = useTranslation()
     const [items, setItems] = useState([])
     const token = window.localStorage.getItem("token");
-
-    const showId = (data) => {
-        alert('Funciona: ' + data)
-    }
 
     useEffect(() => {
       const fetchItems = async () => {
@@ -25,13 +22,14 @@ const UserPlaylists = ({ query }) => {
         console.log(result.data.items)
       }
       fetchItems()
-    }, [query])
+    }, [])
 
     return (
         <div className='row card-container'>
             {items.map(playlist => (
-                <div className='col-12 col-md-6 col-lg-4 col-xl-3 mb-4' key={ playlist.id }>
-                    <div className='c-card' onClick={() => {alert(playlist.id)}}>
+              <Link to={`/playlist/${playlist.id}`} className='none-link' key={ playlist.id }>
+                <div className='col-12 col-md-6 col-lg-4 col-xl-3 mb-4'>
+                    <div className='c-card'>
                         <div className='c-card__head'>
                             <img src={ playlist.images[0].url } className='card-img-top' />
                             </div>
@@ -40,6 +38,7 @@ const UserPlaylists = ({ query }) => {
                             </div>
                     </div>
                 </div>
+              </Link>
             ))}
         </div>
     );

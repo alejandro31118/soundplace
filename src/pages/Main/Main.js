@@ -7,13 +7,14 @@ import Search from '../Search/Search';
 import Header from '../../components/Header/Header';
 import Player from '../../components/Player/Player';
 import UserProfile from '../UserProfile/UserProfile';
+import UserSinglePlaylist from '../UserSinglePlaylist/UserSinglePlaylist';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Main = () => {
     const { t } = useTranslation()
 
     return (
-      <div className="bg-dark">
+      <div className="">
         <Header />
 
         <Routes>
@@ -21,6 +22,7 @@ const Main = () => {
             <Route path='/library' element={ <Library /> } />
             <Route path='/search' element={ <Search /> } />
             <Route path='/me' element={ <UserProfile /> } />
+            <Route path='/playlist/:playlistId' element={ <UserSinglePlaylist /> } />
         </Routes>
 
         <Player />

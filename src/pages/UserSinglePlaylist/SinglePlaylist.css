@@ -1,0 +1,4 @@
+.single-playlist {
+    min-height: 80vh;
+    overflow: scroll;
+}
