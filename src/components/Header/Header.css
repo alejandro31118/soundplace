@@ -8,6 +8,8 @@ nav {
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    background-color: #2E3440;
+    /* background-color: #3B4252; */
 }
 .logo {
     height: 2.5rem;
@@ -22,15 +24,16 @@ nav {
     justify-content: space-between;
     grid-area: middle;
     width: 100%;
+    color: #E5E9F0;
 }
-.link {
+.nav-item-l {
     text-decoration: none;
-    color: inherit;
     text-align: center;
-}
-.link:hover {
-    text-decoration: none;
     color: inherit;
+}
+.nav-item-l:hover {
+    text-decoration: none;
+    color: #4C566A;
 }
 .settings {
     background-color: inherit;

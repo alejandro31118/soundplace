@@ -7,8 +7,8 @@ const Playlists = () => {
     const { t } = useTranslation()
 
     return (
-      <div className="container library bg-dark mt-3">
-        <h2 className='text-light'>{t('PLAYLISTS')}</h2>
+      <div className="container library mt-3">
+        <h2 className='mb-4'>{t('PLAYLISTS')}</h2>
         <UserPlaylists />
       </div>
     );
