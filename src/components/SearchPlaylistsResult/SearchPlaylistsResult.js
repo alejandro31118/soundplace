@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import Icon from '../Icon/Icon';
 
 const SearchPlaylistsResult = ({ query }) => {
-    const { t } = useTranslation()
     const [items, setItems] = useState([])
     const token = window.localStorage.getItem("token");
 
@@ -21,12 +20,13 @@ const SearchPlaylistsResult = ({ query }) => {
         console.log(result.data.playlists.items)
       }
       fetchItems()
-    }, [query])
+    }, [query, token])
 
     return (
         <div className='row'>
             {items.map(playlist => (
                 <div className='col-6 border'>
+                  <Link to={`/playlist/${playlist.id}`} className='none-link' key={ playlist.id }>
                     <div className='d-inline-flex m-2 align-items-center' style={{ cursor: "pointer" }} key={ playlist.id } >
                     {playlist.images.length ? <img src={ playlist.images[0].url } style={{ height: "64px", width: "64px" }} /> : <Icon name="album" color="#3B4252" size="64px" />}
                         <div className="m-3">
@@ -34,6 +34,7 @@ const SearchPlaylistsResult = ({ query }) => {
                             <div className='text-light'>{ playlist.owner.display_name }</div>
                         </div>
                     </div>
+                  </Link>
                 </div>
             ))}
         </div>

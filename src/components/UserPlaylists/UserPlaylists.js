@@ -23,7 +23,7 @@ const UserPlaylists = () => {
     }, [token])
 
     return (
-        <div className='row card-container'>
+        <div className='row card-container mb-4'>
             {items.map(playlist => (
                 <div className='col-12 col-md-6 col-lg-4 col-xl-3 mb-4'>
                   <Link to={`/playlist/${playlist.id}`} className='none-link' key={ playlist.id }>
