@@ -1,0 +1,39 @@
+.single-artist {
+    height: 80vh;
+    overflow: scroll;
+}
+.artist-header {
+    height: 25vh;
+    padding: 1rem;
+    background-color: #E5E9F0;
+    color: #4C566A;
+}
+.artist-image {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 5%;
+}
+.artist-info {
+    display: block;
+    padding-top: 2rem;
+    height: 18vh;
+}
+.artist-info > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.card-img-top {
+    content: fit;
+}
+.card {
+    background-color: #4C566A;
+}
+.card-text {
+    overflow: hidden;
+}
+.track-info {
+    justify-content: space-between;
+}
+.track-duration {
+    margin-left: auto;
+}

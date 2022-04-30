@@ -6,7 +6,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SinglePlaylist.css';
 
-const UserSinglePlaylist = () => {
+const SinglePlaylist = () => {
     const { t } = useTranslation()
     const [items, setItems] = useState([])
     const [playlistInfo, setPlaylistInfo] = useState([])
@@ -45,7 +45,7 @@ const UserSinglePlaylist = () => {
           <div className='row justify-content-center mb-4'>
             {items.map(track => (
                 <div className='col-11 border-bottom'>
-                    <div className='d-inline-flex m-2 align-items-center' style={{ cursor: "pointer" }} key={ track.track.id } >
+                    <div className='d-inline-flex m-2 align-items-center name' style={{ cursor: "pointer" }} key={ track.track.id } >
                         {track.track.album.images.length ? <img src={ track.track.album.images[0].url } style={{ height: "64px", width: "64px" }} /> : <div>No Image</div>}
                         <div className="m-3">
                             <div className='text-light'>{ track.track.name }</div>
@@ -55,7 +55,7 @@ const UserSinglePlaylist = () => {
                             ))}
                             </div>
                         </div>
-                        <div className='text-right align-self-right'>
+                        <div className='position-relative end-0'>
                           <p className='text-light'>{formatMS(track.track.duration_ms)}</p>
                         </div>
                     </div>
@@ -66,4 +66,4 @@ const UserSinglePlaylist = () => {
     );
 };
 
-export default UserSinglePlaylist;
+export default SinglePlaylist;
