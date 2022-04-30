@@ -1,4 +1,24 @@
 .single-playlist {
-    min-height: 80vh;
+    height: 80vh;
     overflow: scroll;
+}
+.playlist-header {
+    height: 25vh;
+    padding: 1rem;
+    background-color: #E5E9F0;
+    color: #4C566A;
+}
+.playlist-image {
+    height: 20vh;
+    width: auto;
+    border-radius: 5%;
+}
+.playlist-info {
+    display: block;
+    padding-top: 2rem;
+    height: 18vh;
+}
+.playlist-info > h1 {
+    font-size: 3rem;
+    font-weight: 600;
 }
