@@ -1,6 +1,5 @@
 .trackrow {
     margin-left: 20px;
-    padding: 20px;
     display: flex;
     align-items: center;
     z-index: 100;
@@ -21,7 +20,7 @@
 .trackrow-info > p {
     font-size: 14px;
     margin-top: 3px;
-    color: white;
+    color: rgb(167, 167, 167);
 }
 .trackrow-album {
     height: 64px;

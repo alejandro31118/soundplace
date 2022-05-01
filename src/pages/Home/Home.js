@@ -33,7 +33,7 @@ const Home = () => {
             <Link to={`/category/${category.id}`} className='none-link' key={ category.id }>
               <li className='discover-item'>
                   <img src={category?.icons[0].url} />
-                  <h2>{category?.name}</h2>
+                  <h2>{category?.name === 'Dance/Electronic' ? 'EDM' : category?.name}</h2>
               </li>
             </Link>
           ))}

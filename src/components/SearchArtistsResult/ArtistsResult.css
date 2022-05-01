@@ -3,6 +3,7 @@
     width: 100%;
     padding: 10px;
     justify-content: space-around;
+    overflow-y: scroll;
 }
 .artist-result {
     margin-bottom: 15px;
