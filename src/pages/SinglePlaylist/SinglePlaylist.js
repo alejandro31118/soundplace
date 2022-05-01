@@ -25,7 +25,6 @@ const SinglePlaylist = () => {
             })
             setPlaylistInfo(result.data)
             setItems(result.data.tracks.items)
-            console.log(result.data.tracks.items)
       }
       getPlaylistInfo()
     }, [playlistId, token])

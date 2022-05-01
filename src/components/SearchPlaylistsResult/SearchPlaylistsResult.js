@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './PlaylistResult.css'
+import '../UserPlaylists/UserPlaylists.css';
 import Icon from '../Icon/Icon';
 
 const SearchPlaylistsResult = ({ query }) => {
@@ -23,16 +25,17 @@ const SearchPlaylistsResult = ({ query }) => {
     }, [query, token])
 
     return (
-        <div className='row'>
+        <div className='row justify-content-center'>
             {items.map(playlist => (
-                <div className='col-6 border'>
+                <div className='col-12 col-md-6 col-lg-4 col-xl-3 mb-4'>
                   <Link to={`/playlist/${playlist.id}`} className='none-link' key={ playlist.id }>
-                    <div className='d-inline-flex m-2 align-items-center' style={{ cursor: "pointer" }} key={ playlist.id } >
-                    {playlist.images.length ? <img src={ playlist.images[0].url } style={{ height: "64px", width: "64px" }} /> : <Icon name="album" color="#3B4252" size="64px" />}
-                        <div className="m-3">
-                            <div className='text-light'><strong>{ playlist.name }</strong></div>
-                            <div className='text-light'>{ playlist.owner.display_name }</div>
-                        </div>
+                    <div className='c-card-r'>
+                        <div className='c-card__head-r'>
+                            <img src={ playlist.images[0].url } className='card-img-top' />
+                            </div>
+                            <div className='c-card__body'>
+                                <p className='c-card__name mb-1'>{ playlist.name }</p>
+                            </div>
                     </div>
                   </Link>
                 </div>
