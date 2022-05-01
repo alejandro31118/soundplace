@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { formatMS } from '../../context/globalFunctions';
 import axios from 'axios';
 
 const SearchTracksResult = ({ query }) => {
@@ -22,19 +23,15 @@ const SearchTracksResult = ({ query }) => {
     return (
         <div className='row'>
             {items.map(track => (
-                <div className='col-12 border-bottom'>
-                    <div className='d-inline-flex m-2 align-items-center' style={{ cursor: "pointer" }} key={ track.id } >
-                        {track.album.images.length ? <img src={ track.album.images[0].url } style={{ height: "64px", width: "64px" }} /> : <div>No Image</div>}
-                        <div className="m-3">
-                            <div className='text-light'>{ track.name }</div>
-                            <div className='text-light'>
-                            {track.artists.map(artist => (
-                                artist.name + ', '
-                            ))}
-                            </div>
-                        </div>
-                    </div>
+              <div className='trackrow border-bottom'>
+                <img className="trackrow-album" src={track.album.images[0].url} alt="" />
+                <div className="trackrow-info">
+                    <h1>{track.name} - {formatMS(track.duration_ms)}</h1>
+                    <p>
+                        {track.artists.map((artist) => artist.name).join(", ")}
+                    </p>
                 </div>
+              </div>
             ))}
         </div>
     );

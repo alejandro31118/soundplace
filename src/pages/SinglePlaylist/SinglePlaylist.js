@@ -5,6 +5,7 @@ import { formatMS } from '../../context/globalFunctions';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SinglePlaylist.css';
+import '../../components/SearchTracksResult/TrackResult.css'
 
 const SinglePlaylist = () => {
     const { t } = useTranslation()
@@ -44,22 +45,15 @@ const SinglePlaylist = () => {
           </div>
           <div className='row justify-content-center mb-4'>
             {items.map(track => (
-                <div className='col-11 border-bottom'>
-                    <div className='d-inline-flex m-2 align-items-center name' style={{ cursor: "pointer" }} key={ track.track.id } >
-                        {track.track.album.images.length ? <img src={ track.track.album.images[0].url } style={{ height: "64px", width: "64px" }} /> : <div>No Image</div>}
-                        <div className="m-3">
-                            <div className='text-light'>{ track.track.name }</div>
-                            <div className='text-light'>
-                            {track.track.artists.map(artist => (
-                                artist.name + ', '
-                            ))}
-                            </div>
-                        </div>
-                        <div className='position-relative end-0'>
-                          <p className='text-light'>{formatMS(track.track.duration_ms)}</p>
-                        </div>
-                    </div>
+              <div className='trackrow border-bottom'>
+                <img className="trackrow-album" src={track.track.album.images[0].url} alt="" />
+                <div className="trackrow-info">
+                    <h1>{track.track.name} - {formatMS(track.track.duration_ms)}</h1>
+                    <p>
+                        {track.track.artists.map((artist) => artist.name).join(", ")}
+                    </p>
                 </div>
+              </div>
             ))}
           </div>
         </div>

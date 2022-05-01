@@ -5,6 +5,7 @@ import { formatMS } from '../../context/globalFunctions';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SingleArtist.css';
+import '../../components/SearchTracksResult/TrackResult.css'
 
 const SingleArtist = () => {
     const { t } = useTranslation()
@@ -67,13 +68,13 @@ const SingleArtist = () => {
             <h2 className='mt-4'>{t('TOP_TRACKS')}</h2>
             <div className='row mb-4'>
                 {topTracks.map(track => (
-                    <div className='col-11 border-bottom'>
-                        <div className='d-inline-flex m-2' style={{ cursor: "pointer" }} key={ track.id } >
-                            {track.album.images.length ? <img src={ track.album.images[0].url } style={{ height: "64px", width: "64px" }} /> : <div>No Image</div>}
-                            <div className="m-3">
-                                <div className='text-light'>{ track.name }</div>
-                            </div>
-                            <span className='text-light mt-3 track-duration'>{formatMS(track.duration_ms)}</span>
+                    <div className='trackrow border-bottom'>
+                        <img className="trackrow-album" src={track.album.images[0].url} alt="" />
+                        <div className="trackrow-info">
+                            <h1>{track.name} - {formatMS(track.duration_ms)}</h1>
+                            <p>
+                                {track.artists.map((artist) => artist.name).join(", ")}
+                            </p>
                         </div>
                     </div>
                 ))}
@@ -85,7 +86,7 @@ const SingleArtist = () => {
                         {album.images.length ? <img src={ album.images[0].url } className='card-img-top' /> : <div>No Image</div>}
                         <div className="card-body">
                             <span className='card-text'>{album.name.length > 20 ? album.name.substring(0,20) + '...' : album.name}</span>
-                            <p className='card-text'>{album.release_date.slice(0, -6)} · { t(`${album.album_type}`)}</p>       
+                            <p className='card-text'>{album.release_date.slice(0, -6)} · { t(`${album.album_type}`) }</p>       
                         </div>
                     </div>
                 ))}

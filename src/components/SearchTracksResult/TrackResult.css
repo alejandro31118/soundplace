@@ -1,0 +1,29 @@
+.trackrow {
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    color: white;
+}
+.trackrow:hover {
+    cursor: pointer;
+    background-color: #4C566A;
+    opacity: 0.8;
+}
+.trackrow-info {
+    margin-left: 20px;
+}
+.trackrow-info > h1 {
+    font-size: 16px;
+    padding-top: 1rem;
+}
+.trackrow-info > p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: white;
+}
+.trackrow-album {
+    height: 64px;
+    width: 64px;
+}
