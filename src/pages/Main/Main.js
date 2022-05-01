@@ -9,6 +9,7 @@ import UserProfile from '../UserProfile/UserProfile';
 import SinglePlaylist from '../SinglePlaylist/SinglePlaylist';
 import SingleArtist from '../SingleArtist/SingleArtist';
 import SingleAlbum from '../SingleAlbum/SingleAlbum';
+import SingleCategory from '../SingleCategory/SingleCategory';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Main = () => {
@@ -24,6 +25,7 @@ const Main = () => {
             <Route path='/playlist/:playlistId' element={ <SinglePlaylist /> } />
             <Route path='/artist/:artistId' element={ <SingleArtist /> } />
             <Route path='/album/:albumId' element={ <SingleAlbum /> } />
+            <Route path='/category/:categoryId' element={ <SingleCategory /> } />
         </Routes>
 
         <Player />

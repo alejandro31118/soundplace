@@ -4,25 +4,21 @@
     "LOGIN_MSG_2": "Start listening to the best new releases.",
     "LOGOUT": "Logout",
     "LANG": "Language",
-
     "PLAYLISTS": "Playlists",
     "FOLLOWERS": "Followers",
     "TOP_TRACKS": "Top tracks",
     "ALBUMS": "Discography",
     "single": "Single",
     "album": "Album",
-
     "TEST": "Text in english",
     "HOME": "Home",
-
+    "DISCOVER": "Discover",
     "SEARCH": "Search",
     "SEARCH_PLACEHOLDER": "Artists, songs, albums, etc",
     "SONGS": "Songs",
     "ARTISTS": "Artists",
     "NO_DATA": "No matchings",
-
     "LIBRARY": "Library",
-
     "USER_PROFILE": "Profile",
     "RECENTLY_PLAYED_SONGS": "Recently played songs",
     "DATE": "Date: "

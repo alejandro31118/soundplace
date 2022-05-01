@@ -4,25 +4,21 @@
     "LOGIN_MSG_2": "Escucha las mejores novedades.",
     "LOGOUT": "Cerrar sesión",
     "LANG": "Idioma",
-
     "PLAYLISTS": "Listas de reproducción",
     "FOLLOWERS": "Seguidores",
     "TOP_TRACKS": "Top canciones",
     "ALBUMS": "Discografia",
     "single": "Sencillo",
     "album": "Album",
-
     "TEST": "Texto en español",
     "HOME": "Inicio",
-
+    "DISCOVER": "Descubre",
     "SEARCH": "Explorar",
     "SEARCH_PLACEHOLDER": "Artistas, canciones, albums, etc",
     "SONGS": "Canciones",
     "ARTISTS": "Artistas",
     "NO_DATA": "No hay coincidencias",
-
     "LIBRARY": "Biblioteca",
-
     "USER_PROFILE": "Perfil",
     "RECENTLY_PLAYED_SONGS": "Canciones escuchadas recientemente",
     "DATE": "Fecha: "
