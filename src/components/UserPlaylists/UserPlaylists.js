@@ -35,7 +35,7 @@ const UserPlaylists = () => {
                                 <p className='c-card__name mb-1'>{ playlist.name }</p>
                             </div>
                     </div>
-                    </Link>
+                  </Link>
                 </div>
             ))}
         </div>

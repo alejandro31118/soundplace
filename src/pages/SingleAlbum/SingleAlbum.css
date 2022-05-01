@@ -1,0 +1,31 @@
+.single-album {
+    height: 80vh;
+    overflow: scroll;
+}
+.album-header {
+    min-height: 25vh;
+    padding: 1rem;
+    background-color: #E5E9F0;
+    color: #4C566A;
+}
+.album-image {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 5%;
+}
+.album-info {
+    padding-top: 2rem;
+    height: 18vh;
+}
+.album-info > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.none-link {
+    text-decoration: none;
+    color: inherit;
+}
+.none-link:hover {
+    text-decoration: none;
+    color: inherit;
+}

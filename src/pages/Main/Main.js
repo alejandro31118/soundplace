@@ -8,6 +8,7 @@ import Player from '../../components/Player/Player';
 import UserProfile from '../UserProfile/UserProfile';
 import SinglePlaylist from '../SinglePlaylist/SinglePlaylist';
 import SingleArtist from '../SingleArtist/SingleArtist';
+import SingleAlbum from '../SingleAlbum/SingleAlbum';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Main = () => {
@@ -22,6 +23,7 @@ const Main = () => {
             <Route path='/me' element={ <UserProfile /> } />
             <Route path='/playlist/:playlistId' element={ <SinglePlaylist /> } />
             <Route path='/artist/:artistId' element={ <SingleArtist /> } />
+            <Route path='/album/:albumId' element={ <SingleAlbum /> } />
         </Routes>
 
         <Player />

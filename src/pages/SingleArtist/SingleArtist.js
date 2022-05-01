@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { formatMS } from '../../context/globalFunctions';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -54,7 +54,7 @@ const SingleArtist = () => {
 
     return (
         <div className='container single-artist mt-2 sticky'>
-            <div className='playlist-header row align-items-center'>
+            <div className='artist-header row align-items-center'>
                 <div className='col-2'>
                     {artistInfo.images !== undefined ? <img src={ artistInfo.images[0].url } className='artist-image' alt='' /> : <div>No Image</div>}
                 </div>
@@ -83,11 +83,13 @@ const SingleArtist = () => {
             <div className='row justify-content-around mb-5'>
                 {albums.map(album => (
                     <div className='card mt-3' style={{ width: '15rem' }} key={album.id}>
-                        {album.images.length ? <img src={ album.images[0].url } className='card-img-top' /> : <div>No Image</div>}
-                        <div className="card-body">
-                            <span className='card-text'>{album.name.length > 20 ? album.name.substring(0,20) + '...' : album.name}</span>
-                            <p className='card-text'>{album.release_date.slice(0, -6)} · { t(`${album.album_type}`) }</p>       
-                        </div>
+                        <Link to={`/album/${album.id}`} className='none-link' key={ album.id }>
+                            {album.images.length ? <img src={ album.images[0].url } className='card-img-top' /> : <div>No Image</div>}
+                            <div className="card-body">
+                                <span className='card-text'>{album.name.length > 20 ? album.name.substring(0,20) + '...' : album.name}</span>
+                                <p className='card-text'>{album.release_date.slice(0, -6)} · { t(`${album.album_type}`) }</p>       
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>
