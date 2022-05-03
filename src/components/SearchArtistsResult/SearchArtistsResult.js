@@ -26,7 +26,7 @@ const SearchArtistsResult = ({ query }) => {
         {items.map(artist => (
           <Link to={`/artist/${artist.id}`} className='none-link' key={ artist.id }>
             <div className="artist-result">
-              <img src={ artist.images[0] ? artist.images[0].url : 'https://upload.wikimedia.org/wikipedia/en/e/ee/Unknown-person.gif' } />
+              <img src={ artist.images[0] ? artist.images[0].url : 'https://ronaldmottram.co.nz/wp-content/uploads/2019/01/default-user-icon-8.jpg' } />
               <p>{artist.name}</p>
             </div>
           </Link>

@@ -4,8 +4,12 @@ const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = process.env.REACT_APP_CLIENT_ID;
 const redirectUri = process.env.REACT_APP_REDIRECT_URI;
 const scopes = [
+  "streaming",
+  "user-read-private",
   "user-library-read", 
   "playlist-read-private",
+  "playlist-modify-private",
+  "playlist-modify-public",
   "user-read-email",
   "user-follow-read",
   "user-read-currently-playing",

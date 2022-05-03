@@ -2,3 +2,23 @@
     height: 80vh;
     overflow: scroll;
 }
+.profile-header {
+    height: 25vh;
+    padding: 1rem;
+    background-color: #E5E9F0;
+    color: #4C566A;
+}
+.profile-image {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 5%;
+}
+.profile-info {
+    display: block;
+    padding-top: 2rem;
+    height: 18vh;
+}
+.profile-info > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}

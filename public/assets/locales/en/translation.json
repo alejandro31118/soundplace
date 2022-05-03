@@ -17,6 +17,7 @@
     "SEARCH_PLACEHOLDER": "Artists, songs, albums, etc",
     "SONGS": "Songs",
     "ARTISTS": "Artists",
+    "FOLLOWED_ARTISTS": "Followed Artists",
     "NO_DATA": "No matchings",
     "LIBRARY": "Library",
     "USER_PROFILE": "Profile",
