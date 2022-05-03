@@ -3,8 +3,9 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { formatMS } from '../../context/globalFunctions';
-import '../../components/SearchTracksResult/TrackResult.css'
-import '../../components/SearchArtistsResult/ArtistsResult.css'
+import './UserProfile.css';
+import '../../components/SearchTracksResult/TrackResult.css';
+import '../../components/SearchArtistsResult/ArtistsResult.css';
 
 const UserProfile = ({}) => {
     const { t } = useTranslation()
@@ -40,18 +41,17 @@ const UserProfile = ({}) => {
           setUser(result.data)
           setFollowedArtists(resultFollowedArtists.data.artists.items)
           setTracks(resultRecentlyTracks.data.items)
-          console.log(resultFollowedArtists.data.artists.items)
         }
         fetchUserData()
       }, [])
 
     return (
       <div className='container profile mt-3'>
-        <div className='artist-header row align-items-center'>
+        <div className='profile-header row align-items-center'>
           <div className='col-2'>
-            <img src={ user.images ? user.images.url : 'https://ronaldmottram.co.nz/wp-content/uploads/2019/01/default-user-icon-8.jpg' } />
+            <img src={ user.images ? user.images.url : 'https://ronaldmottram.co.nz/wp-content/uploads/2019/01/default-user-icon-8.jpg' } className='profile-image' />
           </div>
-          <div className='artist-info col-10'>
+          <div className='profile-info col-10'>
             <h4>{user?.display_name}</h4>
             <p>
               {user?.email}
