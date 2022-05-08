@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './PlaylistResult.css'
 import '../UserPlaylists/UserPlaylists.css';
-import Icon from '../Icon/Icon';
 
 const SearchPlaylistsResult = ({ query }) => {
     const [items, setItems] = useState([])
@@ -26,12 +25,12 @@ const SearchPlaylistsResult = ({ query }) => {
 
     return (
         <div className='row justify-content-center'>
-            {items.map(playlist => (
+            {items?.map(playlist => (
                 <div className='col-12 col-md-6 col-lg-4 col-xl-3 mb-4'>
                   <Link to={`/playlist/${playlist.id}`} className='none-link' key={ playlist.id }>
                     <div className='c-card-r'>
                         <div className='c-card__head-r'>
-                            <img src={ playlist.images[0].url } className='card-img-top' />
+                            <img src={ playlist.images[0] ? playlist.images[0].url : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/No_music.svg/1024px-No_music.svg.png' } className='card-img-top' />
                             </div>
                             <div className='c-card__body'>
                                 <p className='c-card__name mb-1'>{ playlist.name }</p>

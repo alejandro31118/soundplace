@@ -22,9 +22,9 @@ const SearchTracksResult = ({ query }) => {
 
     return (
         <div className='row'>
-            {items.map(track => (
+            {items?.map(track => (
               <div className='trackrow border-bottom'>
-                <img className="trackrow-album" src={track.album.images[0].url} alt="" />
+                <img className="trackrow-album" src={track.album?.images[0].url} alt="" />
                 <div className="trackrow-info">
                     <h1>{track.name} - {formatMS(track.duration_ms)}</h1>
                     <p>

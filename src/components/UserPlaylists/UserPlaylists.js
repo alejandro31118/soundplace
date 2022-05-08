@@ -29,7 +29,7 @@ const UserPlaylists = () => {
                   <Link to={`/playlist/${playlist.id}`} className='none-link' key={ playlist.id }>
                     <div className='c-card'>
                         <div className='c-card__head'>
-                            <img src={ playlist.images[0].url } className='card-img-top' />
+                            <img src={ playlist?.images[0]?.url } className='card-img-top' />
                             </div>
                             <div className='c-card__body'>
                                 <p className='c-card__name mb-1'>{ playlist.name }</p>

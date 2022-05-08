@@ -23,6 +23,7 @@
     color: rgb(167, 167, 167);
 }
 .trackrow-album {
+    margin-left: 1rem;
     height: 64px;
     width: 64px;
 }

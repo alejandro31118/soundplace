@@ -1,29 +1,43 @@
-.player {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
+.rhap_container {
+    background: #2E3440;
+    bottom: 0 !important;
+    width: 100vw !important;
+  }
+  
+  .rhap_controls-section {
+    margin-bottom: 15px;
+  }
+  
+  .rhap_progress-section {
+    height: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .rhap_main-controls-button {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .rhap_main-controls-button {
+    width: 56px;
+    height: 56px;
+    display: block;
+  }
+  
+  .rhap_main-controls-button svg {
+    color: #E5E9F0;
     width: 100%;
-    grid-template-areas: '1 middle right';
-    min-height: 4rem;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    background-color: aquamarine;
-}
-.control {
-    position: relative;
-    margin: 0 auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-area: middle;
-    width: 100%;
-}
-.settings {
-    background-color: inherit;
-    grid-area: right;
-    display: inline-flex;
-    margin-left: auto;
-}
+    height: 100%;
+  }
+  .rhap_progress-filled,
+  .rhap_progress-indicator {
+    background-color: #E5E9F0 !important;
+  }
+  
+  .rhap_button-clear.rhap_volume-button {
+    color: #E5E9F0 !important;
+  }
+  
+  .rhap_volume-bar, .rhap_volume-indicator {
+    background-color: #E5E9F0;
+  }

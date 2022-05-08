@@ -10,10 +10,11 @@ import '../../components/SearchTracksResult/TrackResult.css'
 const SinglePlaylist = () => {
     const { t } = useTranslation()
     const [items, setItems] = useState([])
+    let songs = []
     const [playlistInfo, setPlaylistInfo] = useState([])
     const token = window.localStorage.getItem("token");
     const { playlistId } = useParams();
-
+    
     useEffect(() => {
       const getPlaylistInfo = async () => {
         const result = await axios(`https://api.spotify.com/v1/playlists/${playlistId}`, {
@@ -25,6 +26,7 @@ const SinglePlaylist = () => {
             })
             setPlaylistInfo(result.data)
             setItems(result.data.tracks.items)
+            document.querySelectorAll('#pushPos').forEach(e => e.remove())
       }
       getPlaylistInfo()
     }, [playlistId, token])
@@ -45,6 +47,7 @@ const SinglePlaylist = () => {
           <div className='row justify-content-center mb-4'>
             {items.map(track => (
               <div className='trackrow border-bottom'>
+                <div id='pushPos'>{track.track.preview_url ? songs.push(track.track.preview_url) : null}</div>
                 <img className="trackrow-album" src={track.track.album.images[0].url} alt="" />
                 <div className="trackrow-info">
                     <h1>{track.track.name} - {formatMS(track.track.duration_ms)}</h1>
@@ -55,6 +58,7 @@ const SinglePlaylist = () => {
               </div>
             ))}
           </div>
+          {localStorage.setItem('songs', JSON.stringify(songs))}
         </div>
     );
 };

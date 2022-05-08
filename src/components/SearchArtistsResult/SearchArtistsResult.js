@@ -23,7 +23,7 @@ const SearchArtistsResult = ({ query }) => {
 
     return (
       <div className='menu-list artist-list'>
-        {items.map(artist => (
+        {items?.map(artist => (
           <Link to={`/artist/${artist.id}`} className='none-link' key={ artist.id }>
             <div className="artist-result">
               <img src={ artist.images[0] ? artist.images[0].url : 'https://ronaldmottram.co.nz/wp-content/uploads/2019/01/default-user-icon-8.jpg' } />

@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
-import { useTranslation } from 'react-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SingleCategory.css'
 
 const SingleCategory = () => {
-    const { t } = useTranslation()
     const [playlists, setPlaylists] = useState([])
     const [category, setCategory] = useState([])
     const token = window.localStorage.getItem("token");
