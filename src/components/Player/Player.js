@@ -6,7 +6,7 @@ import './Player.css';
 
 const Player = () => {
     const [currentSong, setCurrentSong] = useState(0);
-    const songs = JSON.parse(localStorage.getItem('songs'));
+    const songs = localStorage.getItem('songs') ? JSON.parse(localStorage.getItem('songs')) : "" ;
     const song = songs[currentSong];
 
     return (
