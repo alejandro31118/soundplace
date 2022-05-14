@@ -10,7 +10,7 @@ When the download is over, you must copy the example .env file:
 ```sh
 cp .env.example .env
 ```
-Before you put your API KEY in .env file, you can run:
+After you put your API KEY in .env file, you can run:
 ```sh
 npm start
 ```
