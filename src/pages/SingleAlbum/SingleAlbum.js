@@ -33,10 +33,10 @@ const SingleAlbum = () => {
     return (
         <div className='container single-album mt-2 sticky'>
             <div className='album-header row align-items-center'>
-                <div className='col-2'>
+                <div className='col-12 -col-md-3'>
                     {albumInfo.images !== undefined ? <img src={ albumInfo.images[0].url } className='album-image' alt='' /> : <div>No Image</div>}
                 </div>
-                <div className='album-info col-10'>
+                <div className='album-info col-12 col-md-9'>
                     <h1>{albumInfo?.name}</h1>
                     <p>
                     {albumInfo?.artists?.map((artist) => artist.name).join(", ")} · {albumInfo?.release_date?.slice(0, -6)} · { t(`${albumInfo?.album_type}`) }

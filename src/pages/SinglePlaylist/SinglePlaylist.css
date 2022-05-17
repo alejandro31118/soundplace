@@ -9,13 +9,15 @@
     color: #4C566A;
 }
 .playlist-image {
-    height: 20vh;
-    width: 20vh;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 5%;
 }
 .playlist-info {
-    display: block;
-    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 18vh;
 }
 .playlist-info > h1 {

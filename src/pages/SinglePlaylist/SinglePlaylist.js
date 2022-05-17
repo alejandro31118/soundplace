@@ -34,10 +34,10 @@ const SinglePlaylist = () => {
     return (
         <div className='container single-playlist mt-2 sticky'>
           <div className='playlist-header row align-items-center'>
-            <div className='col-2'>
+            <div className='col-12 col-md-3'>
               {playlistInfo.images !== undefined ? <img src={ playlistInfo.images[0].url } className='playlist-image' alt='' /> : <div>No Image</div>}
             </div>
-            <div className='playlist-info col-10'>
+            <div className='playlist-info col-12 col-md-9'>
                 <h1>{playlistInfo.name}</h1>
                 <p>
                   {playlistInfo.owner ? playlistInfo.owner.display_name : 'No'} · {playlistInfo.followers ? playlistInfo.followers.total : '0'} { t('FOLLOWERS') }

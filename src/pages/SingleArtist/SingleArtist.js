@@ -55,10 +55,10 @@ const SingleArtist = () => {
     return (
         <div className='container single-artist mt-2 sticky'>
             <div className='artist-header row align-items-center'>
-                <div className='col-2'>
+                <div className='col-12 col-md-3'>
                     {artistInfo.images !== undefined ? <img src={ artistInfo.images[0].url } className='artist-image' alt='' /> : <div>No Image</div>}
                 </div>
-                <div className='artist-info col-10'>
+                <div className='artist-info col-12 col-md-9'>
                     <h1>{artistInfo.name}</h1>
                     <p>
                         {artistInfo.followers ? artistInfo.followers.total : '0'} { t('FOLLOWERS') }
