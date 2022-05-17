@@ -18,7 +18,7 @@ const scopes = [
   "user-top-read",
   "user-modify-playback-state",
 ];
-export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
+export const loginEndpoint = `${authEndpoint}client_id=https://soundplace.netlify.app/&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 
 const apiSpotify = axios.create({
   baseURL: "https://api.spotify.com/v1/",
