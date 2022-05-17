@@ -55,7 +55,7 @@ const SingleArtist = () => {
     return (
         <div className='container single-artist mt-2 sticky'>
             <div className='artist-header row align-items-center'>
-                <div className='col-12 col-md-3'>
+                <div className='col-12 col-md-2'>
                     {artistInfo.images !== undefined ? <img src={ artistInfo.images[0].url } className='artist-image' alt='' /> : <div>No Image</div>}
                 </div>
                 <div className='artist-info col-12 col-md-9'>

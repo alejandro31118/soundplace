@@ -33,7 +33,7 @@ const SingleAlbum = () => {
     return (
         <div className='container single-album mt-2 sticky'>
             <div className='album-header row align-items-center'>
-                <div className='col-12 -col-md-3'>
+                <div className='col-12 -col-md-2'>
                     {albumInfo.images !== undefined ? <img src={ albumInfo.images[0].url } className='album-image' alt='' /> : <div>No Image</div>}
                 </div>
                 <div className='album-info col-12 col-md-9'>

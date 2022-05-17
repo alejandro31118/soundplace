@@ -3,7 +3,6 @@
     overflow: scroll;
 }
 .album-header {
-    min-height: 25vh;
     padding: 1rem;
     background-color: #E5E9F0;
     color: #4C566A;
